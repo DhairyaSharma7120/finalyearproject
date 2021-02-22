@@ -1,0 +1,11 @@
+.accept-green{
+	background: #ADFF2F	;
+	border: none;
+	padding: 5px;
+	font-weight: bold;
+}
+.reject-red{
+	background: tomato;
+	border: none;
+	padding: 5px;
+}

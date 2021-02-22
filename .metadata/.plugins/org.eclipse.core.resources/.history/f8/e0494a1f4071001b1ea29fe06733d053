@@ -1,0 +1,21 @@
+.accept-green{
+	background: #ADFF2F	;
+	border: 2px solid white;
+	padding: 5px;
+	color:black;
+	font-weight: bold;
+	transition:1s;
+}
+.accept-green:hover{
+	background: white;
+	border: 2px solid #ADFF2F;
+	color: #008000	;
+	padding: 5px;
+	font-weight: bold;
+}
+.reject-red{
+	background: tomato;
+	border: none;
+	padding: 5px;
+	font-weight: bold;
+}

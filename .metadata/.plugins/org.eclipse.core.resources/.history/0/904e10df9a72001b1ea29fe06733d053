@@ -1,0 +1,135 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" import = "java.sql.*"%>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>House Mart</title>
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="adminResources/css/app.min.css">
+  <link rel="stylesheet" href="adminResources/css/selectric.css">
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="adminResources/css/style.css">
+  <link rel="stylesheet" href="adminResources/css/components.css">
+  <!-- Custom style CSS -->
+  <link rel="stylesheet" href="adminResources/css/custom.css">
+  <link rel='shortcut icon' type='image/x-icon' href='adminResources/image/favicon.ico' />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./adminResources/css/register.css">
+</head>
+
+<body>
+  <div class="loader"></div>
+  <jsp:include page="header.jsp"></jsp:include>
+  <jsp:include page="menu.jsp"></jsp:include>
+  <div id="app">
+    <section class="section mt-5">
+      <div class="container mt-2">
+        <div class="row">
+          <div class="mt-5 col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
+            <div class="card card-primary">
+              <div class="card-header">
+                <h4 class="header">Residential Category</h4>
+              </div>
+              <%-- <% 
+   			  Boolean pass = true;
+              String pas = (String)session.getAttribute("pass");  
+              out.println(pass);
+              out.println(pas);
+              
+              
+              %> --%>
+              <div class="card-body">
+                <form method="POST" action="./registerdb.jsp">
+                  <div class="row">
+                    <div class="form-group col-6">
+                      <label for="frist_name">Property Type</label>
+                      <select class="form-control">
+                      	<option>Select Option </option>
+                      	<option>Apartment</option>
+                      	<option>Bunglow</option>
+                      	<option>Flat</option>
+                      	<option>Plot</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-6">
+                      <label for="frist_name">Construction Status</label>
+                      <select class="form-control">
+                      	<option>Select Option </option>
+                      	<option>Ready To  Move</option>
+                      	<option>Fully Furnished</option>
+                      	<option>Under Construction</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-12"><label>LOCATION</label></div>
+                    <div class="form-group col-4">
+                      <label for="frist_name">State</label>
+               
+                    </div>
+                         <div class="form-group col-4">
+                      <label for="frist_name">City</label>
+               
+                    </div>
+                         <div class="form-group col-4">
+                      <label for="frist_name">Area</label>
+               
+                    </div>
+                    <div class="form-group col-6">
+                      <label for="bhks">BHKs</label>
+                      <select class="form-control">
+                      	<option>Select Option </option>
+                      	<option>1</option>
+                      	<option>2</option>
+                      	<option>3</option>
+                      	<option>4</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-6">
+                      <label for="frist_name">Property Area</label>
+                      <input id="frist_name" type="text" class="form-control" name="first_name" autofocus required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <button id="submit-btn"  type="Submit" class="btn btn-primary btn-lg btn-block">
+                      Search
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script type="text/javascript">
+  const check = function() {
+	  document.getElementById("submit-btn").addEventListener("click", function(event){
+		  event.preventDefault()
+		});
+	  console.log(document.getElementById('password').value);
+	  console.log(document.getElementById('password2').value);
+	  if (document.getElementById('password').value ==
+	    document.getElementById('password2').value) {
+	    $(this).trigger(e.type);
+	  } else {
+	   alert("Password is not matching");
+	  }
+	}
+  </script>
+  <!-- General JS Scripts -->
+  <script src="adminResources/js/app.min.js"></script>
+  <!-- JS Libraies -->
+  <script src="adminResources/js/jquery.pwstrength.min.js"></script>
+  <script src="adminResources/js/jquery.selectric.min.js"></script>
+  <!-- Page Specific JS File -->
+  <script src="adminResources/js/auth-register.js"></script>
+  <!-- Template JS File -->
+  <script src="adminResources/js/scripts.js"></script>
+  <!-- Custom JS File -->
+  <script src="adminResources/js/custom.js"></script>
+</body>
+
+</html>

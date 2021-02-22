@@ -1,0 +1,6 @@
+.accept-green{
+	background: green;
+}
+.reject-red{
+	background: tomato;
+}
