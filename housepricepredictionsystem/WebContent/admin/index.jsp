@@ -28,13 +28,9 @@
 		<div class="main-wrapper main-wrapper-1">
 			<div class="navbar-bg"></div>
 
-
 			<jsp:include page="header.jsp"></jsp:include>
 
-
 			<jsp:include page="menu.jsp"></jsp:include>
-
-
 			<!-- Main Content -->
 			<div class="main-content">
 			

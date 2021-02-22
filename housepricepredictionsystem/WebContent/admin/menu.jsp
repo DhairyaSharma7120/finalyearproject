@@ -9,19 +9,32 @@
 		</div>
 		<ul class="sidebar-menu">
 			<!-- <li class="menu-header">Main</li> -->
-			<li class="dropdown active"><a href="./index.jsp"
+		<!--  	<li class="dropdown active"><a href="./index.jsp"
 				class="nav-link"><i data-feather="home"></i><span>Home</span></a>
+			</li> 
+			-->
+			<li class="dropdown"><a href="./datatable.jsp"
+				class="nav-link"><i data-feather="layers"></i><span>Manage User</span></a>
 			</li>
-			<li class="dropdown"><a href="#"
-				class="nav-link"><i data-feather="book"></i><span>About Us</span></a>
-			</li>
+			
+			<!--    class="dropdown"><a href="#"
+				class="nav-link"><i data-feather="book"></i><span></span></a>
+			</li> -->
 			<li class="dropdown"><a href="#"
 				class="menu-toggle nav-link has-dropdown"><i
-					data-feather="briefcase"></i><span>Services</span></a>
+					data-feather="briefcase"></i><span>Manage Categories</span></a>
 				<ul class="dropdown-menu">
-					<li><a class="nav-link" href="widget-chart.html">Buy House</a></li>
-					<li><a class="nav-link" href="widget-data.html">Sell House</a></li>
+					<li><a class="nav-link" href="residential.jsp">Residential</a></li>
+					<li><a class="nav-link" href="commercial.jsp">Commercials</a></li>
 				</ul></li>
+				
+				
+				<li class="dropdown"><a href="complain.jsp"
+				class="nav-link"><i data-feather="alert-triangle"></i><span>Manage Complains</span></a>
+			</li>  
+			<li class="dropdown"><a href="#"
+				class="nav-link"><i data-feather="alert-triangle"></i><span>Manage Feedbacks</span></a>
+			</li>  
 			<!-- <li class="dropdown"><a href="#"
 				class="menu-toggle nav-link has-dropdown"><i
 					data-feather="command"></i><span>Apps</span></a>
@@ -31,7 +44,7 @@
 					<li><a class="nav-link" href="blog.html">Blog</a></li>
 					<li><a class="nav-link" href="calendar.html">Calendar</a></li>
 				</ul></li> -->
-			<li class="dropdown"><a href="#"
+		<!-- 	<li class="dropdown"><a href="#"
 				class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>Contact</span></a>
 				<ul class="dropdown-menu">
 					<li><a class="nav-link" href="email-inbox.html">Inbox</a></li>
@@ -63,7 +76,7 @@
 					<li><a class="nav-link" href="typography.html">Typography</a></li>
 				</ul></li>
  -->
-			<li class="dropdown"><a href="#"
+			<!--  <li class="dropdown"><a href="#"
 				class="menu-toggle nav-link has-dropdown"><i
 					data-feather="shopping-bag"></i><span>Current Deals</span></a>
 				<ul class="dropdown-menu">
@@ -144,9 +157,9 @@
 							Gallery</a></li>
 					<li><a href="gallery1.html">Gallery 2</a></li>
 				</ul></li> -->
-				<li class="dropdown"><a href="#"
+			<!-- 	<li class="dropdown"><a href="#"
 				class="nav-link"><i data-feather="image"></i><span>Gallery</span></a>
-			</li>
+			</li>  -->
 			<!-- <li class="dropdown"><a href="#"
 				class="menu-toggle nav-link has-dropdown"><i data-feather="flag"></i><span>Sliders</span></a>
 				<ul class="dropdown-menu">
@@ -183,15 +196,11 @@
 					<li><a href="auth-reset-password.html">Reset Password</a></li>
 					<li><a href="subscribe.html">Subscribe</a></li>
 				</ul> </li>-->
-				<li class="dropdown"><a href="./register.jsp"
+				<!--   <li class="dropdown"><a href="./register.jsp"
 				class="nav-link"><i data-feather="users"></i><span>Login/Registration</span></a>
-			</li>
-			<li class="dropdown"><a href="#"
-				class="nav-link"><i data-feather="alert-triangle"></i><span>Feedback</span></a>
-			</li>
-			<li class="dropdown"><a href="./datatable.jsp"
-				class="nav-link"><i data-feather="layers"></i><span>Datatable</span></a>
-			</li>
+			</li> -->
+			
+			
 			<!-- <li class="dropdown"><a href="#"
 				class="menu-toggle nav-link has-dropdown"><i
 					data-feather="alert-triangle"></i><span>Errors</span></a>

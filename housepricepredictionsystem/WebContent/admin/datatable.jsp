@@ -19,6 +19,7 @@
 <link rel="stylesheet" href="adminResources/css/components.css">
 <!-- Custom style CSS -->
 <link rel="stylesheet" href="adminResources/css/custom.css">
+<link rel="stylesheet" href="adminResources/css/datatable.css">
 <link rel='shortcut icon' type='image/x-icon'
 	href='adminResources/image/favicon.ico' />
 </head>
@@ -76,8 +77,8 @@ c.close();
 														<th>Last Name</th>
 														<th>Email</th>
 														<th>Phone Number</th>
-														<th>Password</th>
-													
+														<th>Actions</th>
+																										
 													</tr>
 												</thead>
 												<tbody>
@@ -96,7 +97,10 @@ c.close();
 														<td><%out.println(ln); %></td>
 														<td><%out.println(email); %></td>
 														<td><%out.println(phone); %></td>
-														<td><%out.println(psw); %></td>
+														<td>
+															<button class="accept-green">ACCEPT</button> 
+															<button class="reject-red">REJECT</button>
+														</td>
 													
 													</tr>
 													<% } %>
