@@ -68,15 +68,7 @@
 					<li><a class="nav-link" href="residential.jsp">Add Property Area</a></li>
 					<li><a class="nav-link" href="commercial.jsp">View Property Area</a></li>
 				</ul></li>
-			
-			
-			<li class="dropdown"><a href="#"
-				class="menu-toggle nav-link has-dropdown"><i
-					data-feather="briefcase"></i><span>Manage Property</span></a>
-				<ul class="dropdown-menu">
-					<li><a class="nav-link" href="residential.jsp">Add Property</a></li>
-					<li><a class="nav-link" href="commercial.jsp">View Property</a></li>
-				</ul></li>	
+				
 				
 				<li class="dropdown"><a href="complain.jsp"
 				class="nav-link"><i data-feather="alert-triangle"></i><span>Manage Complains</span></a>

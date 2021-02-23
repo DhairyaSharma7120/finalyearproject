@@ -47,36 +47,15 @@
 			
 			<li class="dropdown"><a href="#"
 				class="menu-toggle nav-link has-dropdown"><i
-					data-feather="briefcase"></i><span>Manage Location </span></a>
+					data-feather="briefcase"></i><span>Manage Construction Status </span></a>
 				<ul class="dropdown-menu">
-					<li><a class="nav-link" href="residential.jsp">Add Location</a></li>
-					<li><a class="nav-link" href="commercial.jsp">View Location</a></li>
-				</ul></li>
-			
-			<li class="dropdown"><a href="#"
-				class="menu-toggle nav-link has-dropdown"><i
-					data-feather="briefcase"></i><span>Manage BHKs </span></a>
-				<ul class="dropdown-menu">
-					<li><a class="nav-link" href="residential.jsp">Add Bhks</a></li>
-					<li><a class="nav-link" href="commercial.jsp">View Bhks</a></li>
-				</ul></li>
-			
-			<li class="dropdown"><a href="#"
-				class="menu-toggle nav-link has-dropdown"><i
-					data-feather="briefcase"></i><span>Manage Property Area </span></a>
-				<ul class="dropdown-menu">
-					<li><a class="nav-link" href="residential.jsp">Add Property Area</a></li>
-					<li><a class="nav-link" href="commercial.jsp">View Property Area</a></li>
+					<li><a class="nav-link" href="residential.jsp">Add Construction Status</a></li>
+					<li><a class="nav-link" href="commercial.jsp">View Construction Status</a></li>
 				</ul></li>
 			
 			
-			<li class="dropdown"><a href="#"
-				class="menu-toggle nav-link has-dropdown"><i
-					data-feather="briefcase"></i><span>Manage Property</span></a>
-				<ul class="dropdown-menu">
-					<li><a class="nav-link" href="residential.jsp">Add Property</a></li>
-					<li><a class="nav-link" href="commercial.jsp">View Property</a></li>
-				</ul></li>	
+			
+				
 				
 				<li class="dropdown"><a href="complain.jsp"
 				class="nav-link"><i data-feather="alert-triangle"></i><span>Manage Complains</span></a>
