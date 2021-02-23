@@ -43,19 +43,10 @@
                     </div>
                     
                     <div class="form-group row mb-4">
-                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Content</label>
+                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Feedback</label>
                       <div class="col-12 col-md-3 col-lg-3">
                         <textarea class="summernote-simple" rows="4" cols="50"></textarea>
                         </div>
-                    </div>
-                    <div class="form-group row mb-4">
-                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Attachments</label>
-                      <div class="col-sm-12 col-md-7">
-                        <div id="image-preview" class="image-preview">
-                          <label for="image-upload" id="image-label">Choose File</label>
-                          <input type="file" name="image" id="image-upload">
-                        </div>
-                      </div>
                     </div>
                     <div class="form-group row mb-4">
                       <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>

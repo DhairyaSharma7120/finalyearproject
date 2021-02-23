@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="adminResources/css/components.css">
 <!-- Custom style CSS -->
 <link rel="stylesheet" href="adminResources/css/custom.css">
-<link rel="stylesheet" href="adminResources/css/index.css">
+<!-- <link rel="stylesheet" href="./adminResources/css/index.css"> -->
 <!-- <link rel='shortcut icon' type='image/x-icon'
 	href='adminResources/image/favicon.ico' /> -->
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -28,14 +28,18 @@
 		<div class="main-wrapper main-wrapper-1">
 			<div class="navbar-bg"></div>
 
+
 			<jsp:include page="header.jsp"></jsp:include>
 
+
 			<jsp:include page="menu.jsp"></jsp:include>
+
+
 			<!-- Main Content -->
 			<div class="main-content">
-			
+ 			
 			<div class="background"></div>
-				<div class="header-content">
+			<!--  <div class="header-content">
 					<div class="content">
 						<div class="header"> <h2>WELCOME TO HOUSE MART</h2></div>
 						<div class="header2">
@@ -48,9 +52,9 @@
 						
 					</div>
 					
-				</div>
+				</div> -->
 
-<!-- 				<section class="section">
+			<section class="section">
 					<div class="row ">
 						<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
 							<div class="card">
@@ -720,7 +724,7 @@
 						</div>
 					</div>
 				</section>
- -->			</div>
+			</div>
 
 			<jsp:include page="footer.jsp"></jsp:include>
 
