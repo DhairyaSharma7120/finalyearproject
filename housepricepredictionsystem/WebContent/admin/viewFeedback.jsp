@@ -95,10 +95,10 @@ c.close();
 <%-- 														<td><%out.println(ln); %></td> --%>
 <%-- 														<td><%out.println(email); %></td> --%>
 <%-- 														 <td><%out.println(phone); %></td>  --%>
-														<td>
-															<button class="btn btn-outline-success">Edit</button> 
-															<button class="btn btn-outline-danger">Delete</button>
-														</td>
+											<td>
+												
+							<i class="fas fa-trash" style="color:tomato;" aria-hidden="true"></i>	
+											</td>
 													
 													</tr>
 													<% } %>

@@ -97,8 +97,9 @@ c.close();
 														<td><%out.println(email); %></td>
 <%-- 														 <td><%out.println(phone); %></td>  --%>
 														<td>
-															<button class="btn btn-outline-success">Edit</button> 
-															<button class="btn btn-outline-danger">Delete</button>
+<i class="fas fa-edit" style="color:green; padding-right:15px;"
+								 aria-hidden="true"></i>
+							<i class="fas fa-trash" style="color:tomato;" aria-hidden="true"></i>
 														</td>
 													
 													</tr>

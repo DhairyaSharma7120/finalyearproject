@@ -26,7 +26,7 @@
 										fa-user"></i> Profile
 				</a>
 				<div class="dropdown-divider"></div>
-				<a href="auth-login.html" class="dropdown-item has-icon text-danger">
+				<a href="login.jsp" class="dropdown-item has-icon text-danger">
 					<i class="fas fa-sign-out-alt"></i> Logout
 				</a>
 			</div></li>

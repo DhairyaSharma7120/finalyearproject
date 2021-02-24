@@ -53,7 +53,19 @@
                 <form method="POST" action="./registerdb.jsp">
                   <div class="row">
                     <div class="form-group col-6">
-                      <label for="frist_name">Property Type</label>
+                      
+                      
+                      <label for="frist_name">Category Type</label>
+                      <select class="form-control">
+                      	<option disabled selected>Select Option </option>
+                      	<option>Apartment</option>
+                      	<option>Bunglow</option>
+                      	<option>Flat</option>
+                      	<option>Plot</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-6">
+                      <label for="frist_name">Subcategory Type</label>
                       <select class="form-control">
                       	<option disabled selected>Select Option </option>
                       	<option>Apartment</option>
