@@ -73,8 +73,9 @@ c.close();
 												id="tableExport" style="width: 100%;">
 												<thead>
 													<tr>
+														<th>User Name</th>
+														<th>Rating</th>
 														<th>Feedbacks</th>
-														
 														<th>Actions</th>
 																										
 													</tr>
