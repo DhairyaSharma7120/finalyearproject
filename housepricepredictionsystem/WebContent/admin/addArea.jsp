@@ -47,17 +47,17 @@
 										<div class="card-body">
 										
 												 <div class="form-group">
-					                      <label for="frist_name">State Name</label>
+					                      
 					                      <select class="form-control">
-					                      	<option disabled selected>Select Option </option>
+					                      	<option disabled selected>Select State </option>
 					              
 					                      </select>
 					                    </div>
 									
 										 <div class="form-group">
-					                      <label for="frist_name">City Name</label>
+					                      
 					                      <select class="form-control">
-					                      	<option disabled selected>Select Option </option>
+					                      	<option disabled selected>Select City </option>
 					              
 					                      </select>
 					                    </div>

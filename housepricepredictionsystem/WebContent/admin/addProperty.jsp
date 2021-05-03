@@ -55,9 +55,9 @@
                     <div class="form-group col-6">
                       
                       
-                      <label for="frist_name">Category Type</label>
+                      
                       <select class="form-control">
-                      	<option disabled selected>Select Option </option>
+                      	<option disabled selected>Select Category</option>
                       	<option>Apartment</option>
                       	<option>Bunglow</option>
                       	<option>Flat</option>
@@ -65,19 +65,17 @@
                       </select>
                     </div>
                     <div class="form-group col-6">
-                      <label for="frist_name">Subcategory Type</label>
                       <select class="form-control">
-                      	<option disabled selected>Select Option </option>
+                      	<option disabled selected>Select Subcategory </option>
                       	<option>Apartment</option>
                       	<option>Bunglow</option>
                       	<option>Flat</option>
                       	<option>Plot</option>
                       </select>
                     </div>
-                    <div class="form-group col-6">
-                      <label for="frist_name">Construction Status</label>
+                    <div class="form-group col-12">
                       <select class="form-control">
-                      	<option disabled selected>Select Option </option>
+                      	<option disabled selected>Select Construction Status </option>
                       	<option>Ready To  Move</option>
                       	<option>Fully Furnished</option>
                       	<option>Under Construction</option>
@@ -85,35 +83,27 @@
                     </div>
                     <div class="form-group col-12"><label>LOCATION</label></div>
                     <div class="form-group col-4">
-                      <label for="frist_name">State</label>
                       <select class="form-control" id="stateSelect" size="1" onchange="makeSubmenu(this.value)">
-					        <option value="" disabled selected>Choose State</option>
+					        <option value="" disabled selected>Select State</option>
 					      
         			</select>
                
                     </div>
                          <div class="form-group col-4">
-                      <label for="frist_name">City</label>
                       <select class="form-control" id="citySelect" size="1" >
-					        <option value="" disabled selected>Choose City</option>
+					        <option value="" disabled selected>Select City</option>
 					        <option></option>
                
         			</select>	
                     </div>
                          <div class="form-group col-4">
-                      <label for="frist_name">Area</label>
                			<select class="form-control">
-                      	<option disabled selected>Select Option </option>
+                      	<option disabled selected>Select Area </option>
                       
                       </select>
                     </div>
                     
-                    <div class="form-group col-12">
-                      <label class="">Address</label>
-                      <div class="">
-                        <textarea class="summernote-simple" rows="4" cols="50"></textarea>
-                        </div>
-                    </div>
+                    
                     
                     <div class="form-group col-6">
                       <label for="bhks">BHKs</label>
@@ -144,19 +134,29 @@
 						<label>Owner's Email</label> <input type="email"
 							class="form-control" required>
 					</div>
+					
+					
+					<div class="form-group col-12">
+                      <label class="">Address</label>
+                      <div class="">
+                        <textarea class="summernote-simple" rows="4" cols="140"></textarea>
+                        </div>
+                    </div>
+                  
+                      <label class="">Attachments</label>
+                  <div class="form-group col-12	">
+                      <div class="dropzone dz-clickable col-12">
+                        <div id="image-preview" class="dz-default dz-message col-12">
+                          <input type="file" name="image" id="image-upload" multiple="multiple">
+                        </div>
+                      </div>
+                    </div>
+                  
                   </div>
                   
                   
                   
-                  <div class="form-group">
-                      <label class="">Attachments</label>
-                      <div class="">
-                        <div id="image-preview" class="image-preview">
-                          <label for="image-upload" id="image-label">Choose File</label>
-                          <input type="file" name="image" id="image-upload">
-                        </div>
-                      </div>
-                    </div>
+                  
                   <div class="card-footer text-right">
 											<button class="btn btn-primary">Save</button>
 										</div>

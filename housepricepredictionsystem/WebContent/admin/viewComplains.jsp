@@ -73,10 +73,14 @@ c.close();
 												id="tableExport" style="width: 100%;">
 												<thead>
 													<tr>
-														<th>Subject</th>
-														<th>Description</th>
-														<th>Attachments</th>
+														<th>User Name</th>
+														<th>Complaint Subject</th>
+														<th>Complaint Description</th>
+														<th>Date And Time</th>
 														<th>Actions</th>
+														<th>Status</th> 
+														
+														<th>Complaint Reply</th>
 																										
 													</tr>
 												</thead>
@@ -95,12 +99,28 @@ c.close();
 														<td><%out.println(fn); %></td>
 														<td><%out.println(ln); %></td>
 														<td><%out.println(email); %></td>
-<%-- 														 <td><%out.println(phone); %></td>  --%>
+														<td><%out.println(phone); %></td>
 														<td>
-															<button class="btn btn-outline-success">Edit</button> 
-															<button class="btn btn-outline-danger">Delete</button>
+															<i class="fas fa-trash"
+																style="color: tomato; margin-left:15px;"
+															></i>
 														</td>
-													
+										<td>
+											<% 
+											if(fn.equals("Jay")){ %>
+												<span class="badge badge-success">Replied</span>
+											<% }
+											else{ %>
+												<a href="complainReply.jsp" class="btn btn-outline-primary">Reply</a>
+											<% } %>	
+										</td>
+														
+										<td>
+											<% if(fn.equals("Jay")){
+											%>
+											<span class="">This is the example of the complains reply</span>
+											<% } %>				
+										</td>
 													</tr>
 													<% } %>
 												</tbody>

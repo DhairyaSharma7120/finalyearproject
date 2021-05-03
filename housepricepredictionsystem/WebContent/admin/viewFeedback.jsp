@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1" import = "java.sql.*"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,28 +25,6 @@
 </head>
 
 <body>
-<%
-
-
-Class.forName("com.mysql.jdbc.Driver");
-
-Connection c = DriverManager.getConnection("jdbc:mysql://localhost/housepriceprediction","root","root");
-
-
-Statement s= c.createStatement();
-
-
-
-ResultSet rs = s.executeQuery("select * from users");	
-
-
-
-/* 
-s.close();
-c.close();
- */
-
-%>
 	<div id="app">
 		<div class="main-wrapper main-wrapper-1">
 			<div class="navbar-bg"></div>
@@ -73,36 +51,53 @@ c.close();
 												id="tableExport" style="width: 100%;">
 												<thead>
 													<tr>
+														<th>Sr.No.</th>
 														<th>User Name</th>
-														<th>Rating</th>
 														<th>Feedbacks</th>
+														<th>Rating</th>
 														<th>Actions</th>
 																										
 													</tr>
 												</thead>
 												<tbody>
-												<%
-													while(rs.next()){
-														
-														String fn = rs.getString("firstname");
-														String ln = rs.getString("lastname");
-														String email = rs.getString("email");
-														String phone = rs.getString("phonenumber");
-														String psw = rs.getString("password");
-													
-													%>
 													<tr>
-														<td><%out.println(fn); %></td>
-<%-- 														<td><%out.println(ln); %></td> --%>
-<%-- 														<td><%out.println(email); %></td> --%>
-<%-- 														 <td><%out.println(phone); %></td>  --%>
-											<td>
+														<td>asas</td>
+														<td>
+											
+											<%-- <% 
+											if(fn.equals("Jay")){ %> --%>
+																		<i class="fas fa-star" 
+																		style="color:tomato;" aria-hidden="true"></i>
 												
-							<i class="fas fa-trash" style="color:tomato;" aria-hidden="true"></i>	
-											</td>
+																		<i class="fas fa-star" 
+																		style="color:tomato;" aria-hidden="true"></i>
+																		<i class="fas fa-star" 
+																		style="color:tomato;" aria-hidden="true"></i>
+																		<i class="fas fa-star" 
+																		style="color:tomato;" aria-hidden="true"></i>
+																		<i class="fas fa-star" 
+																		style="color:tomato;" aria-hidden="true"></i>	
+											<%-- <% }
+											else if(fn.equals("stefan")){ % --%>>
+																		<i class="fas fa-star" 
+																		style="color:tomato;" aria-hidden="true"></i>
+																		
+																		<i class="fas fa-star" 
+																		style="color:tomato;" aria-hidden="true"></i>
+																		<i class="fas fa-star" 
+																		style="color:tomato;" aria-hidden="true"></i>
+																		<i class="fas fa-star-half" 
+																		style="color:tomato;" aria-hidden="true"></i>
+											<%-- <% } %> --%>	
+											
+																		</td>
+ 														<%-- <td><%out.println(email); %></td>  --%>
+<%-- 														 <td><%out.println(phone); %></td>  --%>
+												<td>
+													<i class="fas fa-trash" style="color:tomato;" aria-hidden="true"></i>	
+												</td>
 													
 													</tr>
-													<% } %>
 												</tbody>
 											</table>
 										</div>

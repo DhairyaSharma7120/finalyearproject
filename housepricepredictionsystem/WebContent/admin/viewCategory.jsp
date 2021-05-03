@@ -1,8 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1" import = "java.sql.*"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta
@@ -25,28 +24,7 @@
 </head>
 
 <body>
-<%
 
-
-Class.forName("com.mysql.jdbc.Driver");
-
-Connection c = DriverManager.getConnection("jdbc:mysql://localhost/housepriceprediction","root","root");
-
-
-Statement s= c.createStatement();
-
-
-
-ResultSet rs = s.executeQuery("select * from users");	
-
-
-
-/* 
-s.close();
-c.close();
- */
-
-%>
 	<div id="app">
 		<div class="main-wrapper main-wrapper-1">
 			<div class="navbar-bg"></div>
@@ -76,33 +54,32 @@ c.close();
 														<th>Category Name</th>
 														<th>Category Description</th>
 														<th>Actions</th>
-																										
+
 													</tr>
 												</thead>
 												<tbody>
-												<%
-													while(rs.next()){
-														
-														String fn = rs.getString("firstname");
-														String ln = rs.getString("lastname");
-														String email = rs.getString("email");
-														String phone = rs.getString("phonenumber");
-														String psw = rs.getString("password");
-													
-													%>
 													<tr>
-														<td><%out.println(fn); %></td>
-														<td><%out.println(ln); %></td>
-													<!-- <td><%out.println(email); %></td>
-														<td><%out.println(phone); %></td> -->
-						<td>
-							<i class="fas fa-edit" style="color:green; padding-right:15px;"
-								 aria-hidden="true"></i>
-							<i class="fas fa-trash" style="color:tomato;" aria-hidden="true"></i>	
-						</td>
-													
+														<%@taglib prefix="c" uri=""%>
+															
+														<c:forEach items=" ${searchList }" var="i" varStatus="j">
+
+															<th>${j.count }</th>
+															<th>${i.categoryName}</th>
+
+
+
+
+															<td><i class="fas fa-edit"
+																style="color: green; padding-right: 15px;"
+																aria-hidden="true"></i> <i class="fas fa-trash"
+																style="color: tomato;" aria-hidden="true"></i></td>
+
+
+
+
+														</c:forEach>
+
 													</tr>
-													<% } %>
 												</tbody>
 											</table>
 										</div>

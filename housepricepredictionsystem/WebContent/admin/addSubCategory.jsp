@@ -45,8 +45,8 @@
 
 										<div class="card-body">
 											<div class="form-group">
-												<label>Add Category</label> <select class="form-control">
-													<option disabled selected>Select Option</option>
+												<select class="form-control">
+													<option disabled selected>Select Category</option>
 												</select>
 											</div>
 											<div class="form-group ">
